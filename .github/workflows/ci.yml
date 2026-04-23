@@ -9,7 +9,6 @@ on:
 jobs:
   pruebas:
     runs-on: ubuntu-latest
-
     steps:
       - name: Descargar el código
         uses: actions/checkout@v4
@@ -24,3 +23,21 @@ jobs:
 
       - name: Correr los tests
         run: npm test
+
+  # ✅ NUEVO JOB DE SEGURIDAD — Se ejecuta en PARALELO con "pruebas"
+  seguridad:
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+    steps:
+      - name: Descargar el código
+        uses: actions/checkout@v4
+
+      # 🔐 ESTA es la línea mágica — analiza tu código buscando vulnerabilidades
+      - name: Inicializar CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: javascript
+
+      - name: Ejecutar análisis de seguridad
+        uses: github/codeql-action/analyze@v3
