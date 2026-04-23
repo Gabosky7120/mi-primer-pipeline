@@ -1,4 +1,4 @@
-// app.test.js - Con cierre correcto del servidor
+// app.test.js
 
 const { sumar, saludo } = require("./app");
 
@@ -8,6 +8,6 @@ test("sumar(2, 3) debe retornar 5", () => {
 });
 
 // Prueba 2: ¿El saludo es el correcto?
-test('saludo() debe retornar "Hola Mundo"', () => {
-  expect(saludo()).toBe("Hola Mundo");
+test('saludo() debe retornar "Hola Arquitectos de Software"', () => {
+  expect(saludo()).toBe("Hola Arquitectos de Software");
 });
