@@ -1,7 +1,7 @@
 {
   "name": "mi-primer-pipeline",
   "version": "1.0.0",
-  "description": "Laboratorio CI/CD - Ingenieria de Software II",
+  "description": "Laboratorio CI/CD - Ingeniería de Software II",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
