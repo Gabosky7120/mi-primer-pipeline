@@ -4,6 +4,7 @@
   "description": "Laboratorio CI/CD - Ingeniería de Software II",
   "main": "index.js",
   "scripts": {
+    "start": "node app.js",
     "test": "jest"
   },
   "repository": {
