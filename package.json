@@ -4,8 +4,8 @@
   "description": "Laboratorio CI/CD - Ingeniería de Software II",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "jest"
+  "start": "node app.js",
+  "test": "jest --forceExit"
   },
   "keywords": [],
   "author": "",

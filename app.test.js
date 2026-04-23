@@ -1,4 +1,4 @@
-// app.test.js - Nuestras pruebas automatizadas
+// app.test.js - Con cierre correcto del servidor
 
 const { sumar, saludo } = require("./app");
 
