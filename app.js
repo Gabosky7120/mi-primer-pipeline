@@ -7,7 +7,7 @@ function sumar(a, b) {
 }
 
 function saludo() {
-  return "Hola Mundo";
+  return "Hola Arquitectos de Software";
 }
 
 // Servidor web que escucha peticiones
